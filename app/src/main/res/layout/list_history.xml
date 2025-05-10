@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/AddCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/list_item_distance"
+    android:layout_marginHorizontal="@dimen/app_padding_horizontal"
+    app:contentPaddingLeft="@dimen/cardview_padding"
+    app:contentPaddingRight="@dimen/cardview_padding"
+    app:contentPaddingTop="@dimen/cardview_padding"
+    app:contentPaddingBottom="@dimen/cardview_padding"
+    app:cardCornerRadius="@dimen/border_radius_default"
+    app:cardElevation="10dp"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textStyle="bold"
+                android:id="@+id/tvTime"
+                android:text="Nguyễn Văn A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="13sp"
+                android:id="@+id/tvDevice"
+                android:textColor="@color/text_hint"
+                android:layout_marginTop="6dp"
+                android:text="0123456789"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

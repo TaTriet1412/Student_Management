@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "617557775826",
+    "project_id": "quanlyhocvien-innovatech",
+    "storage_bucket": "quanlyhocvien-innovatech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617557775826:android:c5f95f51e1c17a5c02e40b",
+        "android_client_info": {
+          "package_name": "com.example.quanlyhocvien"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC7MOdBm-EQe5RQ6Fq5plwJtq9YvAeJY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

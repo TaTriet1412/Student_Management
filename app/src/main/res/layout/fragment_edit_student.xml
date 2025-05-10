@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/app_padding_horizontal"
+    android:paddingTop="@dimen/app_padding_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditStudentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_avatar"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/Circle" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            app:expandedHintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/InfoEditText"
+                android:id="@+id/edtID"
+                android:inputType="text"
+                android:hint="Mã học viên"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edittext_distance"
+            app:hintEnabled="false"
+            app:expandedHintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/InfoEditText"
+                android:id="@+id/edtDisplayName"
+                android:inputType="text"
+                android:hint="Họ và tên"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <AutoCompleteTextView
+            style="@style/InfoEditText"
+            android:focusable="false"
+            android:layout_marginTop="@dimen/edittext_distance"
+            android:id="@+id/autoGender"
+            android:inputType="text"
+            android:hint="Giới tính"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edittext_distance"
+            app:hintEnabled="false"
+            app:expandedHintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/InfoEditText"
+                android:id="@+id/edtDateOfBirth"
+                android:inputType="datetime"
+                android:hint="Ngày sinh"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edittext_distance"
+            app:hintEnabled="false"
+            app:expandedHintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/InfoEditText"
+                android:id="@+id/edtEmail"
+                android:inputType="textEmailAddress"
+                android:hint="E-mail"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edittext_distance"
+            app:hintEnabled="false"
+            app:expandedHintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/InfoEditText"
+                android:id="@+id/edtPhoneNumber"
+                android:inputType="number"
+                android:hint="Số điện thoại"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edittext_distance"
+            app:hintEnabled="false"
+            app:expandedHintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/InfoEditText"
+                android:id="@+id/edtAddress"
+                android:inputType="text"
+                android:hint="Địa chỉ"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCertification"
+            style="@style/ButtonEditText"
+            android:layout_marginTop="@dimen/edittext_distance"
+            android:layout_marginBottom="70dp"
+            android:text="Chứng chỉ" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            style="@style/Button"
+            android:text="Lưu" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            style="@style/Button"
+            android:background="@drawable/bg_button_cancel"
+            android:textColor="@color/text_default"
+            android:layout_marginTop="26dp"
+            android:text="Hủy" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/delete_student"
+            android:textColor="@color/faills"
+            android:textSize="20sp"
+            android:fontFamily="@font/lato_semibold"
+            android:layout_marginBottom="@dimen/fragment_last_item_margin_bottom" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

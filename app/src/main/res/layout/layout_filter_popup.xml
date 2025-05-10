@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical"
+    style="@style/Rounded13"
+    android:background="@drawable/bg_dropdown"
+    android:elevation="4dp"
+    android:translationZ="3dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:useDefaultMargins="true">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên"
+            android:textSize="18sp"
+            android:layout_marginEnd="@dimen/edittext_distance"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/opt_name"
+            android:src="@drawable/ic_sort_az"
+            android:layout_gravity="end"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuổi"
+            android:textSize="18sp"
+            android:layout_marginEnd="@dimen/edittext_distance"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/opt_age"
+            android:src="@drawable/ic_sort_19"
+            android:background="@null"
+            android:layout_gravity="end"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới tính"
+            android:textSize="18sp"
+            android:layout_marginEnd="@dimen/edittext_distance"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/opt_gender"
+            style="@style/Text"
+            android:textSize="18sp"
+            android:focusable="false"
+            android:src="@drawable/ic_sort_19"
+            android:text="nam"
+            android:inputType="textNoSuggestions"
+            android:textColor="#757575"
+            android:background="@null"
+            android:layout_gravity="end"
+            android:dropDownWidth="100dp"/>
+
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/edittext_distance"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/edittext_distance">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/opt_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            style="@style/Text"
+            android:text="@string/underline_reset"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Button"
+            android:id="@+id/opt_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_margin="3dp"
+            android:text="Áp dụng"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_default_size"
+            android:elevation="5dp"
+            android:translationZ="3dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

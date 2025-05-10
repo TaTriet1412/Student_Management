@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/infoStudent"
+        android:enabled="true"
+        android:title="Thông tin học viên"/>
+
+    <item
+        android:id="@+id/certificate"
+        android:enabled="true"
+        android:title="Chứng chỉ"/>
+
+    <item
+        android:id="@+id/delete"
+        android:enabled="true"
+        android:title="Xóa"/>
+</menu>

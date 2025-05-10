@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/info_employee"
+        android:enabled="true"
+        android:title="Thông tin nhân viên"/>
+
+    <item
+        android:id="@+id/history"
+        android:enabled="true"
+        android:title="Lịch sử đăng nhập"/>
+
+    <item
+        android:id="@+id/delete"
+        android:enabled="true"
+        android:title="Vô hiệu hóa tài khoản"/>
+</menu>

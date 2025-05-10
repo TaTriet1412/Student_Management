@@ -1,0 +1,135 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuanLyHocVien" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.QuanLyHocVien" parent="Base.Theme.QuanLyHocVien" />
+
+        <style name="Text">
+            <item name="android:fontFamily">@font/lato_regular</item>
+            <item name="android:textColor">@color/text_default</item>
+            <item name="android:textSize">@dimen/text_default_size</item>
+        </style>
+
+        <style name="Circle">
+            <item name="cornerFamily">rounded</item>
+            <item name="cornerSize">50%</item>
+        </style>
+
+        <style name="Rounded13">
+            <item name="cornerFamily">rounded</item>
+            <item name="cornerSize">13%</item>
+        </style>
+
+        <!--    Dùng cho tất cả Button dài bo góc tối đa   -->
+        <style name="Button" parent="Text">
+            <item name="android:fontFamily">@font/lato_semibold</item>
+            <item name="android:textSize">20sp</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">50dp</item>
+            <item name="android:layout_marginStart">1dp</item>
+            <item name="android:layout_marginEnd">1dp</item>
+            <item name="android:layout_marginBottom">5dp</item>
+            <item name="android:letterSpacing">0.01</item>
+            <item name="android:textColor">#FFF</item>
+            <item name="android:background">@drawable/bg_button</item>
+            <item name="android:layout_gravity">center</item>
+        </style>
+
+        <style name="ButtonEditText" parent="Button">
+            <item name="android:fontFamily">@font/lato_regular</item>
+            <item name="android:textSize">@dimen/text_default_size</item>
+            <item name="android:textColor">@color/text_default</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:paddingTop">15dp</item>
+            <item name="android:paddingBottom">15dp</item>
+            <item name="android:paddingStart">23dp</item>
+            <item name="android:paddingEnd">23dp</item>
+            <item name="android:gravity">start|center</item>
+            <item name="android:backgroundTint">#fff</item>
+        </style>
+
+        <!--    EditText bo góc dùng để nhập dữ liệu thông tin account/sinh viên     -->
+        <style name="InfoEditText" parent="Text">
+            <item name="android:background">@drawable/bg_input_field</item>
+            <item name="android:padding">10dp</item>
+            <item name="android:maxLines">1</item>
+            <item name="android:maxLength">50</item>
+            <item name="android:textSize">@dimen/text_default_size</item>
+            <item name="android:textColor">@color/text_default</item>
+            <item name="android:textColorHint">@color/text_hint</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:paddingStart">23dp</item>
+            <item name="android:paddingEnd">23dp</item>
+            <item name="android:paddingTop">15dp</item>
+            <item name="android:paddingBottom">15dp</item>
+        </style>
+
+        <!--    Card View dùng để chứa cả EditTextLayout và EditTextInput     -->
+        <style name="ShadowCardViewForEditText">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/app_padding_horizontal_2x</item>
+            <item name="android:elevation">@dimen/default_elevation</item>
+            <item name="android:translationZ">@dimen/default_translation_z</item>
+            <item name="cardCornerRadius">@dimen/default_corner_radius</item>
+        </style>
+
+        <!--    TextInputLayout dùng để chứa EditText     -->
+        <style name="TextInputLayoutForEditText">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">@dimen/edittext_min_height</item>
+            <item name="android:minHeight">@dimen/edittext_min_height</item>
+            <item name="android:maxLines">1</item>
+            <item name="boxBackgroundMode">none</item>
+            <item name="hintEnabled">false</item>
+        </style>
+
+        <!--    EditText bo góc dùng để nhập dữ liệu     -->
+        <style name="ForgotPassEditText" parent="Text">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">match_parent</item>
+            <item name="android:background">@drawable/sign_in_frame_view</item>
+            <item name="android:textColorHint">@color/text_hint</item>
+            <item name="android:maxLines">1</item>
+            <item name="android:padding">0dp</item>
+        </style>
+
+        <!--    TextView hiển thị thông báo lỗi bên dưới EditText     -->
+        <style name="DefaultErrorTextView_BindWithEditText" parent="Text">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginStart">@dimen/margin_error_start</item>
+            <item name="android:layout_marginTop">@dimen/margin_error_top_textedit</item>
+            <item name="android:textColor">@color/error</item>
+            <item name="android:textSize">@dimen/text_auth_err_size</item>
+            <item name="android:visibility">invisible</item>
+        </style>
+
+        <!--    TextView hiển thị thông báo hướng dẫn bên dưới tiêu đề lớn của Activity     -->
+        <style name="ResetPassUI_TextHintView" parent="Text">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginTop">@dimen/margin_guide_top_heading</item>
+            <item name="android:layout_marginStart">@dimen/app_padding_horizontal</item>
+            <item name="android:layout_marginEnd">@dimen/app_padding_horizontal</item>
+            <item name="android:textColor">@color/text_hint</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <!--    TextView hiển thị tiêu đề lớn của Activity | Thường dùng trong UI cấp lại mk hoặc đổi mk     -->
+        <style name="ResetPassUI_TextTitleview" parent="Text">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginTop">@dimen/margin_main_title_top_back</item>
+            <item name="android:layout_marginStart">@dimen/app_padding_horizontal</item>
+            <item name="android:layout_marginEnd">@dimen/app_padding_horizontal</item>
+            <item name="fontFamily">@font/lato_heavy</item>
+            <item name="android:textSize">@dimen/text_heading_size</item>
+        </style>
+
+
+</resources>
