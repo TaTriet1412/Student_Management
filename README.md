@@ -48,7 +48,7 @@ APK setting:  (hỗ trợ chạy local client - có thể không cần setup n�
 	Key password: 123456
 	
 File Video demo:
-	[https://drive.google.com/file/d/1ru7qtx5qpofW-7NfQOXbTilGszMUSbAy/view?pli=1](https://drive.google.com/file/d/1J0aNRkbqLfGGZr-OifTViav5WPlxG7H0/view?usp=sharing)
+	https://drive.google.com/file/d/1J0aNRkbqLfGGZr-OifTViav5WPlxG7H0/view?usp=sharing
 
 Setting:
 	MinSDK: API 29 (Android 10)
